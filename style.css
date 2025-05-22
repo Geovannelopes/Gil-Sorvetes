@@ -125,15 +125,24 @@ nav ul li a:hover {
 .destaque {
     width: 100%;
     height: auto;
-    min-height: auto;
-    /* altura mínima */
-    max-height: auto;
-    /* altura máxima, ajuste conforme necessário */
-    margin: 0 auto;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
     position: relative;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+    opacity: 0;
+    transform: translateX(100vh);
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    transform: translateX(0);
+
 }
 
 .destaque img {
@@ -142,10 +151,16 @@ nav ul li a:hover {
     object-fit: cover;
     /* garante que a imagem preencha todo o espaço sem distorcer */
     display: block;
+
 }
 
-.produtos {
+.destaque:not(.active) {
+    display: none;
+}
 
+
+
+.produtos {
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -204,14 +219,14 @@ footer {
     pad: 1rem;
     width: 100%;
     bottom: 0;
-    
+
 }
 
 /* Responsividade para telas médias */
 @media (max-width: 1024px) {
     .card {
         width: calc(33.33%);
-       
+
     }
 }
 
@@ -219,7 +234,7 @@ footer {
 @media (max-width: 768px) {
     .card {
         width: calc(50%);
-        
+
     }
 }
 
@@ -227,6 +242,6 @@ footer {
 @media (max-width: 480px) {
     .card {
         width: calc(100%);
-        
+
     }
 }
