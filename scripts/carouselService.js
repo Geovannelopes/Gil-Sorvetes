@@ -1,5 +1,5 @@
+export async function iniciarCarrossel() {
 const items = document.querySelectorAll('.destaque')
-const list = document.querySelectorAll('.list')
 
 let active = 0;
 const total = items.length
@@ -27,3 +27,4 @@ clearInterval(timer)
 timer = setInterval(() => {
     update(1)
 }, 5000);
+}

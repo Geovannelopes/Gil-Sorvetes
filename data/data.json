@@ -1,0 +1,56 @@
+[
+    {
+    "nome": "Brigadeiro",
+    "preco": 10.00,
+    "imagem": "assets/product-img/Brigadeiro.avif",
+    "categoria": "Kibom"
+  },
+  {
+    "nome": "Tablito",
+    "preco": 12.00,
+    "imagem": "assets/product-img/tablito.avif",
+    "categoria": "Kibom"
+  },
+  {
+    "nome": "Magnum",
+    "preco": 15.00,
+    "imagem": "assets/product-img/magnum.avif",
+    "categoria": "Kibom"
+  },
+  {
+    "nome": "Cornetto",
+    "preco": 12.50,
+    "imagem": "assets/product-img/Cornetto Crocante.avif",
+    "categoria": "Kibom"
+  },
+    {
+    "nome": "Chicabon",
+    "preco": 10.00,
+    "imagem": "assets/product-img/Chicabon.avif",
+    "categoria": "Kibom"
+  },
+    {
+    "nome": "Chambinho",
+    "preco": 9.00,
+    "imagem": "assets/product-img/Chambinho.webp",
+    "categoria": "Nestlé"
+  },
+  {
+    "nome": "Kitkat",
+    "preco": 14.00,
+    "imagem": "assets/product-img/Kitkat.webp",
+    "categoria": "Nestlé"
+  },
+  {
+    "nome": "Mega 3 Chocolate",
+    "preco": 15.00,
+    "imagem": "assets/product-img/mega 3 chocolate.webp",
+    "categoria": "Nestlé"
+  },
+  {
+    "nome": "Nestlé Classisc",
+    "preco": 8.00,
+    "imagem": "assets/product-img/Nestlé Classisc.webp",
+    "categoria": "Nestlé"
+  }
+]
