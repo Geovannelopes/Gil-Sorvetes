@@ -261,6 +261,45 @@ nav ul li a:hover {
     padding: 0.5rem;
 }
 
+.maps {
+    background: #fffdfa;
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 8px rgba(116, 4, 145, 0.07);
+    padding: 2rem 1rem 2.5rem 1rem;
+    margin: 2rem auto 3rem auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.maps-title {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.2rem;
+    color: #740491;
+    margin-bottom: 0.5rem;
+}
+
+.maps-desc {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.maps-frame {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(116, 4, 145, 0.10);
+}
+
+.maps-info {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 1rem;
+    line-height: 1.7;
+}
+
 /* Rodapé da página */
 .footer-container {
     display: flex;

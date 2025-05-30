@@ -9,34 +9,16 @@
     <link rel="website icon" type="png" href="./assets/logo/logo.jpg">
 </head>
 
-<section class="container">
-    <header>
-        <h1>
-            <img src="./assets/logo/logo.jpg" alt="Logo">
-        </h1>
 
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Buscar produtos..." />
+<div id="htmlComponent"></div>
 
-        </div>
-
-        <h2>
-            <a href="/carrinho" class="btn-cart">
-                <img src="./assets/icon/icon-cart-empty.svg" alt="Carrinho">
-            </a>
-        </h2>
-
-    </header>
-</section>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="catalogo.html">Catalogo</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="contato.html">Contato</a></li>
-    </ul>
-</nav>
+<script>
+    fetch('htmlComponent.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('htmlComponent').innerHTML = data;
+        });
+</script>
 
 <main class="main-page">
     <div class="list">
@@ -100,7 +82,8 @@
                     <li>🍨 Parcerias com marcas renomadas como Kibon e Nestlé</li>
                     <li>🥶 Sabores clássicos e também especiais para agradar todos os paladares</li>
                 </ul>
-                <p class="espaco-historia">E se você tiver sorte, vai dar de cara com o próprio Gil, nosso fundador, mais conhecido por todos
+                <p class="espaco-historia">E se você tiver sorte, vai dar de cara com o próprio Gil, nosso fundador,
+                    mais conhecido por todos
                     como
                     Juca ou Bastião. Ele adora bater um papo, ouvir histórias e, claro, contar como tudo começou. Com
                     certeza, ele vai te receber com um sorriso no rosto e um sorvete na mão.
@@ -109,55 +92,35 @@
         </div>
     </section>
 
-
-    <section>
-
+    <section class="maps">
+        <h2 class="maps-title">Venha nos visitar!</h2>
+        <p class="maps-desc">
+            Estamos localizados no coração da cidade, com fácil acesso e estacionamento. Confira o mapa abaixo e venha
+            saborear nossos sorvetes!
+        </p>
+        <div class="maps-frame">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.7480572984987!2d-47.68609902389185!3d-23.288602551629662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5e22ac0d503f3%3A0xc273056749b368a7!2sGIL%20Sorvetes!5e0!3m2!1spt-BR!2sbr!4v1748624889369!5m2!1spt-BR!2sbr"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="maps-info">
+            <strong>Endereço:</strong> Rua do Sorvete, 123 - Centro, Sua Cidade<br>
+            <strong>Telefone:</strong> (11) 99999-9999<br>
+            <strong>Horário:</strong> Segunda a Sábado, das 10h às 19h
+        </div>
     </section>
 </main>
-<footer>
-    <div class="footer-container">
-        <div class="footer-section">
-            <h3>Gil Sorvetes</h3>
-            <p>25 anos trazendo sabor, alegria e tradição para a sua família.</p>
-        </div>
-        <div class="footer-section">
-            <h4>Contato</h4>
-            <ul>
-                <li>📞 (11) 99999-9999</li>
-                <li>✉️ contato@gilsorvetes.com.br</li>
-                <li>📍 Rua do Sorvete, 123 - Centro, Sua Cidade</li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Links Rápidos</h4>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Siga-nos</h4>
-            <ul class="footer-social">
-                <li><a href="https://www.instagram.com/gilsorvetes_/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Instagram">Instagram</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100078186402057" target="_blank"
-                        rel="noopener noreferrer" aria-label="Facebook">Facebook</a></li>
-                <li><a href="#" aria-label="WhatsApp">WhatsApp</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-copy">
-        <p>&copy; 2025 Gil Sorvetes. Todos os direitos reservados.</p>
-        <p>Desenvolvido por Geovanne Lopes.</p>
-        <li>
-            <img src="https://avatars.githubusercontent.com/u/70351723?v=4">
-            <a href="https://github.com/Geovannelopes" target="_blank" rel="noopener noreferrer"
-                aria-label="GitHub">GitHub</a>
-        </li>
-    </div>
-</footer>
+
+<div id="footerComponent"></div>
+
+<script>
+    fetch('footerComponent.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footerComponent').innerHTML = data;
+        });
+</script>
 
 <body>
     <script src="scripts/main.js" type="module"></script>
