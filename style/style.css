@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+
 }
 
 body {
@@ -102,9 +102,9 @@ nav {
 /* Lista de navegação centralizada e sem marcadores */
 nav ul {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     list-style: none;
-    
+
 }
 
 nav ul li a {
@@ -128,16 +128,13 @@ nav ul li a:hover {
 
 .destaque {
     width: 100%;
-    height: auto;
+    height: 30rem;
     border-radius: 12px;
     overflow: hidden;
-    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
     position: relative;
-    inset: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: fill;
     opacity: 0;
     transform: translateX(100vh);
     transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
@@ -153,27 +150,24 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* garante que a imagem preencha todo o espaço sem distorcer */
     display: block;
-
+    pointer-events: none;
 }
 
 .destaque:not(.active) {
     display: none;
 }
 
-
-
 .produtos {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    padding: 5rem;
+    padding: 1.5rem;
     flex-wrap: wrap;
 }
 
 .card {
-    background-color:white;
+    background-color: white;
     border: 1px solid #ccc;
     padding: 1.5rem;
     border-radius: .5rem;
@@ -186,19 +180,19 @@ nav ul li a:hover {
 
 .card img {
     width: 100%;
-    height: 25rem;
+    height: 15rem;
     object-fit: cover;
     margin-bottom: .5rem;
     border-radius: .3rem;
 }
 
 .card p {
-    font-size: 1.6rem; 
-    font-weight: bold;  
-    color: #333;   
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
     font-family: "Inter", sans-serif;
-    font-weight: 500; 
-} 
+    font-weight: 500;
+}
 
 .card button {
     background-color: var(--cor-destaque);
@@ -216,19 +210,145 @@ nav ul li a:hover {
 
 }
 
-/* Rodapé da página */
-footer {
-    background-color: var(--cor-principal);
-    color: var(--cor-fundo);
+.paragrafos {
     text-align: center;
-    pad: 1rem;
-    width: 100%;
-    bottom: 0;
+    padding-top: 5rem;
+    padding-bottom: 0;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    line-height: 1.5;
+}
 
+.text {
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.text-historia-inicial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+}
+
+.text-historia-inicial img {
+    border-radius: 2rem;
+    height: 25rem;
+    object-fit: cover;
+    margin-bottom: .5rem;
+    margin-right: 2rem;
+}
+
+.text-historia {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    color: #333;
+    line-height: 1.7;
+    padding-bottom: 1.5rem;
+    margin: 1rem 0;
+}
+
+.text-historia ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 1rem;
+}
+
+.espaco-historia {
+    padding: 0.5rem;
+}
+
+/* Rodapé da página */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--cor-principal, #740491);
+    color: var(--cor-fundo, #fff);
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    min-width: 180px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: var(--cor-fundo, #fff);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-section a:hover {
+    color: #ffd700;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-copy {
+    text-align: center;
+    background: var(--cor-principal, #740491);
+    color: var(--cor-fundo, #fff);
+    padding: 1rem 0 0.5rem 0;
+    font-size: 0.95rem;
+    border-top: 1px solid #fff2;
+}
+
+.footer-copy li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.footer-copy li a {
+    color: var(--cor-fundo, #fff);
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    transition: color 0.2s;
+}
+
+.footer-copy li a:hover {
+    color: #ffd700;
+}
+
+.footer-copy li img {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
 
 /* Responsividade para telas médias */
 @media (max-width: 1024px) {
+
     .card {
         width: calc(33.33%);
 
@@ -237,6 +357,7 @@ footer {
 
 /* Responsividade para tablets */
 @media (max-width: 768px) {
+
     .card {
         width: calc(50%);
 
@@ -245,6 +366,7 @@ footer {
 
 /* Responsividade para celulares */
 @media (max-width: 480px) {
+
     .card {
         width: calc(100%);
 
