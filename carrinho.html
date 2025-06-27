@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Carrinho de compras Gil Sorvetes - Finalize seu pedido dos melhores sorvetes e picolés da região.">
+    <meta name="keywords" content="carrinho compras, pedido sorvetes, Gil Sorvetes, finalizar compra">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/logo/logo.jpg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+    
+    <title>Carrinho | Gil Sorvetes</title>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <div id="header-placeholder"></div>
+
+    <main id="main-content" class="main-page">
+        <h1 class="paragrafos">Meu Carrinho</h1>
+        
+        <div class="carrinho-container">
+            <div class="carrinho-items">
+                <!-- Produtos serão inseridos aqui via JavaScript -->
+            </div>
+            
+            <div class="carrinho-resumo">
+                <h3>Resumo do Pedido</h3>
+                <div class="resumo-linha">
+                    <span>Total de itens:</span>
+                    <span id="total-itens">0</span>
+                </div>
+                <div class="resumo-linha total">
+                    <span>Total a pagar:</span>
+                    <span id="total-valor">R$ 0,00</span>
+                </div>
+                <button class="btn-finalizar" id="btn-finalizar">
+                    Finalizar Pedido
+                </button>
+                <button class="btn-limpar" id="btn-limpar">
+                    Limpar Carrinho
+                </button>
+            </div>
+        </div>
+        
+        <div id="carrinho-vazio" class="carrinho-vazio" style="display: none;">
+            <h2>Seu carrinho está vazio! 🛒</h2>
+            <p>Que tal dar uma olhada nos nossos deliciosos sorvetes?</p>
+            <a href="catalogo.html" class="btn-voltar">Ver Catálogo</a>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Core Scripts -->
+    <script src="scripts/headerComponent.js"></script>
+    <script src="scripts/footerComponent.js"></script>
+
+    <!-- Page Scripts -->
+    <script src="scripts/carrinho.js" type="module"></script>
+</body>
+
+</html>

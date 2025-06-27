@@ -1,40 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo | Gil Sorvetes</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Catálogo completo Gil Sorvetes - Explore nossa variedade de sorvetes, picolés, gelatos e sobremesas geladas. Sabores únicos e tradicionais.">
+    <meta name="keywords" content="catálogo sorvetes, picolés, gelatos, Gil Sorvetes, sabores, produtos, sobremesas geladas">
+    <meta name="author" content="Gil Sorvetes">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Catálogo | Gil Sorvetes - Todos os Sabores">
+    <meta property="og:description" content="Explore nosso catálogo completo com os melhores sorvetes, picolés e gelatos. Sabores únicos e tradicionais para toda família.">
+    <meta property="og:image" content="./assets/logo/logo.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/logo/logo.jpg">
+    <link rel="apple-touch-icon" href="./assets/logo/logo.jpg">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./style/style.css" as="style">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="website icon" type="png" href="./assets/logo/logo.jpg">
+    
+    <title>Catálogo | Gil Sorvetes - Todos os Sabores</title>
 </head>
 
 <body>
-    <div id="htmlComponent"></div>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
 
-    <script>
-        fetch('htmlComponent.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('htmlComponent').innerHTML = data;
-            });
-    </script>
-
-    <main class="main-page">
+    <main id="main-content" class="main-page">
         <h1 class="paragrafos">Catálogo de Produtos</h1>
         <section class="produtos"></section>
     </main>
 
-    <div id="footerComponent"></div>
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
 
-    <script>
-        fetch('footerComponent.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footerComponent').innerHTML = data;
-            });
-    </script>
+    <!-- Core Scripts -->
+    <script src="scripts/headerComponent.js"></script>
+    <script src="scripts/footerComponent.js"></script>
 
+    <!-- Page Scripts -->
     <script src="scripts/main.js" type="module"></script>
 </body>
 

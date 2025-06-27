@@ -1,129 +1,255 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Gil Sorvetes - 25 anos oferecendo os melhores sorvetes, picolés e gelatos. Qualidade, tradição e sabor que conquistam toda família.">
+    <meta name="keywords" content="sorvetes, picolés, gelatos, Gil Sorvetes, sorveteria, sobremesas geladas, açaí, sorvete artesanal">
+    <meta name="author" content="Gil Sorvetes">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Gil Sorvetes - 25 Anos de Tradição">
+    <meta property="og:description" content="Os melhores sorvetes, picolés e gelatos da região. Qualidade e sabor que conquistam toda família há 25 anos.">
+    <meta property="og:image" content="./assets/logo/logo.jpg">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gil Sorvetes - 25 Anos de Tradição">
+    <meta name="twitter:description" content="Os melhores sorvetes, picolés e gelatos da região. Qualidade e sabor que conquistam toda família.">
+    <meta name="twitter:image" content="./assets/logo/logo.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/logo/logo.jpg">
+    <link rel="apple-touch-icon" href="./assets/logo/logo.jpg">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./style/style.css" as="style">
+    <link rel="preload" href="./assets/logo/logo.jpg" as="image">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css">
-    <title>Gil Sorvetes</title>
-    <link rel="website icon" type="png" href="./assets/logo/logo.jpg">
+    
+    <!-- DNS Prefetch for External Resources -->
+    <link rel="dns-prefetch" href="//wa.me">
+    <link rel="dns-prefetch" href="//api.whatsapp.com">
+    
+    <title>Gil Sorvetes - 25 Anos de Tradição</title>
 </head>
 
-
-<div id="htmlComponent"></div>
-
-<script>
-    fetch('htmlComponent.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('htmlComponent').innerHTML = data;
-        });
-</script>
-
-<main class="main-page">
-    <div class="list">
-        <div class="destaque active">
-            <img src="/assets/banner/chambinho-banner.png" alt="sorvetes-destaque">
-        </div>
-        <div class="destaque">
-            <img src="/assets/banner/cornetto-banner.png" alt="sorvetes-destaque">
-        </div>
-        <div class="destaque">
-            <img src="/assets/banner/fruttare-banner.png" alt="sorvetes-destaque">
-        </div>
-        <div class="destaque">
-            <img src="/assets/banner/tablito-banner.png" alt="sorvetes-destaque">
-        </div>
-        <div class="destaque">
-            <img src="/assets/banner/magnum-banner.png" alt="sorvetes-destaque">
-        </div>
-        <div class="destaque">
-            <img src="/assets/banner/lafrutta-banner.png" alt="sorvetes-destaque">
-        </div>
-        <div class="destaque">
-            <img src="/assets/banner/mega-banner.png" alt="sorvetes-destaque">
-        </div>
-    </div>
-
-    <h1 class="paragrafos">Nossos produtos favoritos!</h1>
-
-    <section class="produtos"></section>
-
-    <section class="historia">
-        <div>
-            <h1 class="text">Conheça a nossa historia</h1>
-        </div>
-        <div class="text-historia-inicial">
-            <div>
-                <img src="/assets/images/470181317_599524005985791_4211843747661250854_n.jpg" alt="Gil Sorvetes">
-
-            </div>
-            <div class="text-historia">
-                <p class="espaco-historia">
-                    Tudo começou a 25 anos, de forma simples, mas cheia de sonhos. Em uma garagem modesta e com uma
-                    máquina
-                    americana de sorvetes, nasceu o Gil Sorvetes, trazendo o inesquecível "Sorvete da Abelinha" que logo
-                    conquistou a vizinhança. Desde o início, o que nos move é a paixão por fazer sorvetes deliciosos e
-                    proporcionar momentos felizes para nossos clientes.
-                </p>
-                <p class="espaco-historia">
-                    Foram anos de muito trabalho, aprendizado e crescimento. Com esforço e carinho, transformamos aquele
-                    pequeno espaço improvisado em um estabelecimento completo, pensado para receber você e sua família
-                    com
-                    conforto, qualidade e, claro, muito sabor.
-                <p>
-                <p class="espaco-historia">
-                    Hoje, o Gil Sorvetes é referência na cidade quando o assunto é sorvete bom! Oferecemos uma grande
-                    variedade de opções:
-                <p>
-                <ul>
-                    <li>🍦 Sorvetes de massa por quilo</li>
-                    <li>🍧 Picolés de diversos sabores</li>
-                    <li>🍨 Parcerias com marcas renomadas como Kibon e Nestlé</li>
-                    <li>🥶 Sabores clássicos e também especiais para agradar todos os paladares</li>
-                </ul>
-                <p class="espaco-historia">E se você tiver sorte, vai dar de cara com o próprio Gil, nosso fundador,
-                    mais conhecido por todos
-                    como
-                    Juca ou Bastião. Ele adora bater um papo, ouvir histórias e, claro, contar como tudo começou. Com
-                    certeza, ele vai te receber com um sorriso no rosto e um sorvete na mão.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="maps">
-        <h2 class="maps-title">Venha nos visitar!</h2>
-        <p class="maps-desc">
-            Estamos localizados no coração da cidade, com fácil acesso e estacionamento. Confira o mapa abaixo e venha
-            saborear nossos sorvetes!
-        </p>
-        <div class="maps-frame">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.7480572984987!2d-47.68609902389185!3d-23.288602551629662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5e22ac0d503f3%3A0xc273056749b368a7!2sGIL%20Sorvetes!5e0!3m2!1spt-BR!2sbr!4v1748624889369!5m2!1spt-BR!2sbr"
-                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="maps-info">
-            <strong>Endereço:</strong> Rua do Sorvete, 123 - Centro, Sua Cidade<br>
-            <strong>Telefone:</strong> (11) 99999-9999<br>
-            <strong>Horário:</strong> Segunda a Sábado, das 10h às 19h
-        </div>
-    </section>
-</main>
-
-<div id="footerComponent"></div>
-
-<script>
-    fetch('footerComponent.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footerComponent').innerHTML = data;
-        });
-</script>
-
 <body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">25 Anos de Tradição e Sabor</h1>
+            <p class="hero-subtitle">
+                Desde 1999 trazendo alegria e os melhores sorvetes para sua família
+            </p>
+            <div class="hero-buttons">
+                <a href="catalogo.html" class="btn-primary">Ver Catálogo</a>
+                <a href="#produtos-destaque" class="btn-secondary">Nossos Favoritos</a>
+            </div>
+        </div>
+        
+        <!-- Carousel de banners -->
+        <div class="hero-carousel">
+            <div class="carousel-container">
+                <div class="destaque active">
+                    <img src="assets/banner/chambinho-banner.png" alt="Chambinho - Sorvete Cremoso">
+                </div>
+                <div class="destaque">
+                    <img src="assets/banner/cornetto-banner.png" alt="Cornetto - Casquinha Crocante">
+                </div>
+                <div class="destaque">
+                    <img src="assets/banner/fruttare-banner.png" alt="Fruttare - Sabor Natural">
+                </div>
+                <div class="destaque">
+                    <img src="assets/banner/tablito-banner.png" alt="Tablito - Chocolate Intenso">
+                </div>
+                <div class="destaque">
+                    <img src="assets/banner/magnum-banner.png" alt="Magnum - Prazer Premium">
+                </div>
+                <div class="destaque">
+                    <img src="assets/banner/lafrutta-banner.png" alt="La Frutta - Frutas Selecionadas">
+                </div>
+                <div class="destaque">
+                    <img src="assets/banner/mega-banner.png" alt="Mega - Tamanho Família">
+                </div>
+            </div>
+            
+            <!-- Indicadores do carousel -->
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                <span class="indicator" data-slide="3"></span>
+                <span class="indicator" data-slide="4"></span>
+                <span class="indicator" data-slide="5"></span>
+                <span class="indicator" data-slide="6"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">Anos de Tradição</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Sabores Diferentes</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Clientes Satisfeitos</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Qualidade Garantida</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section id="produtos-destaque" class="produtos-section">
+        <div class="section-header">
+            <h2 class="section-title">Nossos Produtos Favoritos</h2>
+            <p class="section-subtitle">Selecionamos os sorvetes mais amados pelos nossos clientes</p>
+        </div>
+        <div class="produtos-grid">
+            <!-- Produtos serão inseridos aqui via JavaScript -->
+        </div>
+        <div class="section-footer">
+            <a href="catalogo.html" class="btn-outline">Ver Todos os Produtos</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-container">
+            <div class="feature-item">
+                <div class="feature-icon">🍦</div>
+                <h3>Sorvetes Artesanais</h3>
+                <p>Feitos com ingredientes selecionados e muito carinho</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🚚</div>
+                <h3>Entrega Rápida</h3>
+                <p>Delivery para toda a cidade com qualidade preservada</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                <h3>Tradição Familiar</h3>
+                <p>25 anos de história e receitas especiais da família</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⭐</div>
+                <h3>Qualidade Premium</h3>
+                <p>Parcerias com as melhores marcas do mercado</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa História - Versão Compacta -->
+    <section class="historia-section">
+        <div class="historia-container">
+            <div class="historia-image">
+                <img src="assets/images/470181317_599524005985791_4211843747661250854_n.jpg" alt="Gil Sorvetes - Nossa História">
+            </div>
+            <div class="historia-content">
+                <h2 class="historia-title">Conheça Nossa História</h2>
+                <p class="historia-text">
+                    Tudo começou há 25 anos, de forma simples, mas cheia de sonhos. Em uma garagem modesta 
+                    e com uma máquina americana de sorvetes, nasceu o Gil Sorvetes, trazendo o inesquecível 
+                    "Sorvete da Abelinha" que logo conquistou a vizinhança.
+                </p>
+                <p class="historia-text">
+                    Hoje, somos referência na cidade quando o assunto é sorvete bom! Oferecemos sorvetes 
+                    de massa por quilo, picolés de diversos sabores e parcerias com marcas renomadas.
+                </p>
+                <a href="sobre.html" class="btn-primary">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-title">Venha nos Visitar!</h2>
+            <p class="cta-text">
+                Estamos localizados no coração da cidade, com fácil acesso e estacionamento. 
+                Venha saborear nossos deliciosos sorvetes!
+            </p>
+            <div class="cta-buttons">
+                <a href="contato.html" class="btn-primary">Como Chegar</a>
+                <a href="https://wa.me/5511999999999" class="btn-whatsapp" target="_blank">
+                    💬 WhatsApp
+                </a>
+            </div>
+            
+            <!-- Informações de contato rápido -->
+            <div class="quick-info">
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <span>Rua do Sorvete, 123 - Centro</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🕒</span>
+                    <span>Seg a Sáb, 10h às 19h</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <span>(11) 99999-9999</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Core Scripts -->
+    <script src="scripts/headerComponent.js"></script>
+    <script src="scripts/footerComponent.js"></script>
+    
+    <!-- Page Scripts -->
     <script src="scripts/main.js" type="module"></script>
+    
+    <!-- Performance and Analytics -->
+    <script>
+        // Page performance monitoring
+        window.addEventListener('load', function() {
+            // Optional: Add analytics or performance monitoring here
+            console.log('Página carregada em:', performance.now() + 'ms');
+        });
+        
+        // Service Worker registration for PWA capabilities (optional)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                // Uncomment when you have a service worker
+                // navigator.serviceWorker.register('./sw.js');
+            });
+        }
+    </script>
 </body>
 
 </html>

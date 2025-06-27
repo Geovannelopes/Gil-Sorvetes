@@ -3,31 +3,31 @@
     "nome": "Brigadeiro",
     "preco": 10.00,
     "imagem": "assets/product-img/Brigadeiro.avif",
-    "categoria": "Kibom"
+    "categoria": "Kibon"
   },
   {
     "nome": "Tablito",
     "preco": 12.00,
     "imagem": "assets/product-img/tablito.avif",
-    "categoria": "Kibom"
+    "categoria": "Kibon"
   },
   {
     "nome": "Magnum",
     "preco": 15.00,
     "imagem": "assets/product-img/magnum.avif",
-    "categoria": "Kibom"
+    "categoria": "Kibon"
   },
   {
     "nome": "Cornetto",
     "preco": 12.50,
     "imagem": "assets/product-img/Cornetto Crocante.avif",
-    "categoria": "Kibom"
+    "categoria": "Kibon"
   },
     {
     "nome": "Chicabon",
     "preco": 10.00,
     "imagem": "assets/product-img/Chicabon.avif",
-    "categoria": "Kibom"
+    "categoria": "Kibon"
   },
     {
     "nome": "Chambinho",
@@ -48,9 +48,27 @@
     "categoria": "Nestlé"
   },
   {
-    "nome": "Nestlé Classisc",
+    "nome": "Nestlé Classic",
     "preco": 8.00,
     "imagem": "assets/product-img/Nestlé Classisc.webp",
     "categoria": "Nestlé"
+  },
+  {
+    "nome": "Açaí na Tigela",
+    "preco": 18.00,
+    "imagem": "assets/images/açai.png",
+    "categoria": "Especiais"
+  },
+  {
+    "nome": "Cascão Tradicional",
+    "preco": 6.00,
+    "imagem": "assets/images/cascão.webp",
+    "categoria": "Tradicionais"
+  },
+  {
+    "nome": "Picolé Fruta",
+    "preco": 5.00,
+    "imagem": "assets/images/picole.jpg",
+    "categoria": "Picolés"
   }
 ]
